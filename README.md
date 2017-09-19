@@ -1,7 +1,11 @@
 # Essbase.Pandora 
 English description will be soon )
 
+пример запуска 
 
+ cscript svStressTool_exe.vbs RU3ACTIV.RUN
+
+ ------------------
 Данный набор скриптов предназначен для проведения стресс-тестирования APS и  Essbase. В процесе работы создается шторм подключений ,  запросов MDX, расчетов. Разработка создана на VBScript с использованием SmartView HTML XML API.
 
 Для того что бы начать работу потребуется 
