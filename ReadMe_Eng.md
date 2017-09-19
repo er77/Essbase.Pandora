@@ -1,5 +1,5 @@
 # Essbase.Pandora 
-English description will be soon )
+ 
 
 start-up example
 
