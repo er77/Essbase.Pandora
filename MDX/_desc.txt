@@ -1,0 +1,1 @@
+This folder contains mdx scripts. Each script in separate file
