@@ -1,5 +1,5 @@
-APS=http://wedcb787.frmon.danet:13080/aps/SmartView
-ESB=wedcb591.frmon.danet:1424
+APS=http://aps_server:13080/aps/SmartView
+ESB=essbase:1424
 LOG=system  
 PAS=password
 APP=RU3ACTIV
