@@ -60,8 +60,6 @@ CON=RU3ACTIV.AUT
 
 SLEEP=1
 
-#(MDX=RU3ACTIV_01.MDX   указывается файл , в котором хранится запрос)
-
 MDX=RU3ACTIV_01.MDX
 
 SLEEP=1
