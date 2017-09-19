@@ -6,7 +6,7 @@ start-up example
  cscript svStressTool_exe.vbs RU3ACTIV.RUN
 
  ------------------
-This set of scripts is designed for carrying out stress testing of APS and Essbase. In the work process, a storm of connections, MDX requests, and calculations is created. The development is created in VBScript using the SmartView HTML XML API.
+This set of scripts is designed for carrying out stress testing of APS and Essbase. This tool process  a storm of connections, MDX requests, and calculations is created. The development is created in VBScript using the SmartView HTML XML API.
 In order to get started, you need
   1) MDX scripts (RU3ACTIVХХ.MDX)
   2) Authorization file (RU3ACTIV.AUT)
