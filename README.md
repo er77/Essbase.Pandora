@@ -1,5 +1,5 @@
 # Essbase.Pandora 
-English description will be soon )
+English description ( https://github.com/er77/Essbase.Pandora/blob/master/ReadMe_Eng.md )
 
 пример запуска 
 
