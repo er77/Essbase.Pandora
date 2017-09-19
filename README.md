@@ -15,7 +15,7 @@ English description will be soon )
  4) Файл запуска сценариев (RU3ACTIV.RUN)
  
  
- a) MDX с крипты можно получить включив  аудит в essbase.cfg , они должны быть размещены в директории MDX. 
+ a) MDX с крипты можно получить включив  аудит в essbase.cfg ( они должны быть размещены в директории MDX. )
  
  ------------------
 ;TRACE_REPORT [<appname> [<dbname>] ] <number>
@@ -35,7 +35,7 @@ English description will be soon )
 
 ;    64 – FULL_MEMBERS – traces MDX, GRID, DDB and member names for performance analysis (very heavy!)
 
- ------------------
+  ------------------
  
 b) Файл авторизации состоит из указаний настройки подключения и логина с паролем  Например 
 
