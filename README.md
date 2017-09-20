@@ -1,21 +1,27 @@
 # Essbase.Pandora 
-English description ( https://github.com/er77/Essbase.Pandora/blob/master/ReadMe_Eng.md )
+ 
 
-пример запуска 
+start-up example
 
  cscript svStressTool_exe.vbs RU3ACTIV.RUN
 
  ------------------
-Данный набор скриптов предназначен для проведения стресс-тестирования APS и  Essbase. В процесе работы создается шторм подключений ,  запросов MDX, расчетов. Разработка создана на VBScript с использованием SmartView HTML XML API.
+This set of scripts is designed to  stress test of APS and Essbase. This tool process  a storm of connections, MDX requests, and calculations . The development is created in VBScript using the SmartView HTML XML API.
 
-Для того что бы начать работу потребуется 
- 1) MDX скрипты (RU3ACTIVХХ.MDX)
- 2) Файл авторизации  (RU3ACTIV.AUT)
- 3) Сценарий конкретной сессии (RU3ACTIV.scn01)
- 4) Файл запуска сценариев (RU3ACTIV.RUN)
+In order to get started, you need
+
+  1) MDX scripts (RU3ACTIVХХ.MDX)
+  
+  2) Authorization file (RU3ACTIV.AUT)
+  
+  3) Scenario of a specific session (RU3ACTIV.scn01)
+  
+  4) Script startup file (RU3ACTIV.RUN)
+  
+  5) Essbase Calculation scripts 
  
  
- a) MDX с крипты можно получить включив  аудит в essbase.cfg ( они должны быть размещены в директории MDX. )
+a) MDX scripts (RU3ACTIVХХ.MDX) can be obtained by including audit in essbase.cfg (after creation they should be placed in the MDX directory.)
  
  ------------------
 ;TRACE_REPORT [<appname> [<dbname>] ] <number>
@@ -37,7 +43,7 @@ English description ( https://github.com/er77/Essbase.Pandora/blob/master/ReadMe
 
   ------------------
  
-b) Файл авторизации состоит из указаний настройки подключения и логина с паролем  Например 
+b) The authorization file  (RU3ACTIV.AUT)  consists of instructions for setting up a connection and login with a password. For example
 
 APS=http://serverAPS:13080/aps/SmartView
 
@@ -52,16 +58,14 @@ APP=sample
 DBS=basic
 
  ------------------
- c) Файл сценария работы сессии состоит из команд , подключения , запуска MDX , расчетов и 
- паузы. Строчки которые начинаются с # считаются комментариями и игнорируются . Например 
+c) The session script file (RU3ACTIV.scn01) consists of commands, connection, MDX start, calculations and
+  pause. The lines that begin with "#" symbol are considered like a comments and are ignored. For example
  
 SLEEP=1
 
 CON=RU3ACTIV.AUT
 
 SLEEP=1
-
-#(MDX=RU3ACTIV_01.MDX   указывается файл , в котором хранится запрос)
 
 MDX=RU3ACTIV_01.MDX
 
@@ -73,8 +77,8 @@ MDX=RU3ACTIV_02.MDX
 
  ------------------
 
-в) командный файл запуска сценариев. Указывается имя файла сценария, количество запусков, ждать завершения (sync), тайм аут для следующего запуска 
-Например 
+c) command file (RU3ACTIV.RUN) for running scripts. Specify the name of the script file, the number of starts, wait for completion (sync), timeout for the next run
+for example
 
 #ScenarioName;times;mode;delay
 
