@@ -82,8 +82,8 @@ For example
 
 #ScenarioName;times;mode;delay
 
-RU3ACTIV.scn01;1;sunc;2
+RU3ACTIV.scn01;1;sync;2
 
-RU3ACTIV.scn01;1;asunc;2
+RU3ACTIV.scn01;1;async;2
 
   
